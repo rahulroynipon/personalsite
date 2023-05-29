@@ -1,0 +1,397 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.tittle h1{
+    font-size: 2rem;
+    color: white;
+    text-shadow: 4px 1px 3px rgba(0,0,0,0.42);
+
+
+}
+.logo img{
+    height: 90px;
+    width: 90px;
+    border: 4px solid black;
+    border-radius: 50%;
+    padding: 2px;
+    box-shadow: 1px 1px 4px black;
+}
+
+
+
+[class*="col-"]{
+    float: left;
+    padding: 1% 7%;
+}
+
+[class*="col-"]{
+    width: 100%;
+}
+
+.navbar{
+    text-align: center;
+    background-color: blueviolet;
+  
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: rgb(150, 66, 228);
+    margin: 10PX;
+    color:white;
+    border-radius: 7px;
+    padding: 8px;
+    text-transform: uppercase;
+}
+
+.menu a:hover{
+    background-color: rgb(91, 46, 133);
+    
+}
+.navbar::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.wel{
+    display: flex;
+    flex-direction: column;
+}
+
+#a{
+    height: 100px;
+    width: 80px;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    border-radius: 50%;
+    box-shadow: 0px 1px 0px rgb(155, 141, 141);
+    
+}
+
+#z{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px rgb(148, 137, 137);
+    margin-left: 80%;
+    
+}
+
+.wel h1{
+    font-size: 2.2rem;
+    text-align: center;
+    text-shadow: 4px 1px 3px rgba(144, 132, 132, 0.42);
+    margin-top: -10px;
+}
+
+.wel p{
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 30px;
+}
+
+.about h2{
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    padding: 1% 7%;
+    text-shadow: 4px 1px 3px rgba(0,0,0,0.42);
+
+    
+    
+}
+
+.hrdot{
+    border: dotted 6px white;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 75px;
+
+  }
+
+.profile img{
+    border: 1px solid black;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px black;
+}
+
+.des p{
+    font-size: 1.4rem;
+    color: white;
+    text-align: center;
+    text-shadow: 4px 1px 3px rgba(0,0,0,0.42);
+
+
+}
+
+
+
+.about{
+    background-color: blueviolet;
+    text-align: center;
+}
+.about::after{
+    clear: both;
+    content: " ";
+    display: table;
+}
+
+.cicon img{
+    height: 100px;
+    margin-top: 5%;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 2px;
+    box-shadow: 1px 1px 4px black;
+   
+}
+
+
+.card{
+    text-align: center;
+    background-color: rgb(129, 126, 126);
+    border-radius: 7px;
+    transition: 0.3s;
+    padding: 10px;
+    margin: 10px;
+    
+}
+.card:hover{
+    box-shadow: 0 4px 8px 4px black;
+}
+
+.ctitile{
+    background-color: rgb(72, 70, 70);
+    border-radius: 4px;
+}
+
+.ctitile h2{
+    font-size: 2.5rem;
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+.cdes{
+    text-align: left;
+}
+.cdes strong{
+    font-size: 1.4rem;
+}
+.cdes p{
+    font-size: 1.1rem;
+}
+
+#skill li{
+    list-style: none;
+    font-weight: bolder;
+    margin: 30px 10px;
+    position: relative;
+    text-transform: uppercase;
+
+}
+
+#skill li::before{
+    content: " ";
+    position: absolute;
+    top: calc(100% + 5px);
+    border-radius: 100px;
+    width: 100%;
+    left: 0;
+    height: 10px;
+    background-color: rgb( 86,86,153,.5);
+}
+
+#skill li::after{
+    content: " ";
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    border-radius: 100px;
+    width: 0;
+    height: 10px;
+    background-color: rgb( 86,86,153,1);
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    
+    
+}
+
+#skill li.html::after{
+    animation-name: html;
+
+}
+@keyframes html{
+    to{
+        width: 97%;
+    }
+}
+#skill li.css::after{
+    animation-name: css;
+
+}
+@keyframes css{
+    to{
+        width: 90%;
+    }
+}
+
+#skill li.bootstarp::after{
+    animation-name: bootstarp;
+
+}
+@keyframes bootstarp{
+    to{
+        width: 20%;
+    }
+}
+
+#skill li.javasc::after{
+    animation-name: javasc;
+
+}
+@keyframes javasc{
+    to{
+        width: 40%;
+    }
+}
+
+
+.card::after{
+    clear: both;
+    display: table;
+    content: " ";
+}
+
+
+
+
+
+
+
+
+
+
+.ach{
+    background-color: blueviolet;
+    
+    text-align: center;
+}
+
+.ach h2{
+    text-transform: uppercase;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 4px 1px 3px rgba(0,0,0,0.42);
+}
+
+.ach p{
+    text-align: justify;
+    font-size: 1.2rem;
+    color: white;
+    padding: 1% 2%;
+
+}
+.cont input{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    resize: none;
+
+}
+
+#area{
+    height: 100px;
+
+}
+
+.cont button{
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(20, 57, 20);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    margin: 4px;
+    margin-top: 20px;
+ 
+    width: 100px;
+
+}
+.m{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+}
+.contm button{
+    border-radius: 50%;
+    margin: 13px;
+    transition: 0.4s;
+  
+    
+}
+
+.contm button:hover{
+    background-color: rgb(212, 15, 51);
+}
+
+
+
+.ach::after{
+    clear: both;
+    display: table;
+    content: " ";
+}
+.footer{
+    background-color: black;
+}
+
+.footnav a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 7px;
+
+}
+
+.footnav a:hover{
+    background-color: grey;
+
+}
+
+.foott{
+    color: white;
+    text-align: center;
+    
+}
+
+.footer::after{
+    clear: both;
+    display: table;
+    content: " ";
+}
